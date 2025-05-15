@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    background-size: cover;
   }
   
 
@@ -93,3 +95,48 @@ h1, h2, p {
     margin-bottom: 1em;
     text-align: justify;
   }
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+  }
+  .nav-menu a {
+    color: #f4f4f4;
+  }
+  
+  .post-list h2,
+  .post-content h2 {
+    color: #2c3e50;
+  }
+  
+  .post-content p {
+    color: #555;
+  }
+  @media (max-width: 768px) {
+    .blog-layout {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+      text-align: center;
+    }
+  
+    .post-list, .post-content {
+      padding: 10px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  
